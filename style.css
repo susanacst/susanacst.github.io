@@ -4,30 +4,26 @@
     margin: 0;
 }
 body{
-    font-family: 'Nunito', sans-serif;
-    /*background: ;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1E4D7;
+    
 }
 nav{
     display: flex;
-    background:#f7c9c9;
     padding: 5px 20px;
+    background-color: black;
 }
-nav #logo{
-    font-size: 28px;
-    font-family: 'Handlee', cursive;
 
-    margin-right: 25px;
-}
 nav ul{
     list-style-type:none;
 }
 nav a{
-    color: white;
-    font-weight: 600;
+    font-size: 18px;
+    color: #F1E4D7;
     text-decoration: none;
 }
 a:hover{
-    color:  #707472;
+    color:  #d0dbd6;
     text-decoration: underline;
 }
 .menu li{
@@ -37,10 +33,13 @@ a:hover{
     white-space: nowrap;
 }
 #cover-inicio{
-    display: flex;
-    padding: 15px 25px;
-    /*background-color:#dfebe5;*/
+    display: grid;
+    grid-template-columns: 35% 45%;
+    padding: 45px;
+}
+#cover-inicio h4{
+    color: gray;
 }
 #foto-perfil{
-    width: 200px;
+    width: 300px;
 }

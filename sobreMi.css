@@ -1,0 +1,9 @@
+main{
+    display: grid;
+    grid-template-columns: 85% 35%;
+    width: 75%;
+    height: 100%;
+    padding: 95px;
+
+    border-style: dotted;
+}

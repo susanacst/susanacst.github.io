@@ -1,51 +1,162 @@
-#cover-inicio{
-    display: grid;
-    grid-template-columns: 85% 35%;
-    width: 75%;
-    height: 95%;
-    padding: 55px;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-#btn-mas{
-    display:inline-block;
-	cursor:pointer;
-
-    margin-top: 25px;
-    padding:16px 31px;
-    border-radius:28px;
-	border:2px solid #000000;
-
-    background-color:#EDDDE0;
-
-	color:#000000;
-    font-size:22px;
-		
-	text-decoration:none;
-	text-shadow:0px 1px 0px #d6ccd1;
+body{
+    min-height: 100vh;
+    font-family:'Quicksand', sans-serif;
+   /* overflow: hidden;*/
 }
-#btn-mas:hover{
+nav{
+    background-color: black;
+}
+nav .lista-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+nav .lista-menu li{
+    display: inline-block;
+    margin: 15px 35px;
+    white-space: nowrap;
+}
+nav .lista-menu a{    
+    position: relative;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
     font-weight: 600;
-    color: whitesmoke;
-    background-color: rgb(158, 113, 138);
 }
-#btn-mas:active{
-    position:relative;
-	top:5px;
+nav .lista-menu a:hover{
+    color: #EDDDE0;
+    transition: all 0.7s ease;
 }
-#foto-perfil{
-    width: 100;
+nav .lista-menu a::after{
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #EDDDE0;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px); 
+}
+nav .lista-menu a:hover::after{
+    opacity:1;
+    transform: translateY(15px)
+}
+.contenedor-general{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.contenedor-general .imagen-perfil{
+    display: flex;
+    justify-content: center;
+    min-height: 85vh;
+}
+.contenedor-general .imagen-perfil img{
+    width: 65%;
     height: 75%;
-    border-radius:1000px;
+    margin: 5% 0%;
+    border: rgb(10, 10, 10) 2px solid;
+    border-radius: 200px;
+}
+.contenedor-general .texto-intro{
+    padding: 15% 0% 5% 5%;
+}
+.contenedor-general .texto-intro header, main, footer{
+    margin: 2% 0;
+}
+.contenedor-general .texto-intro main p{
+    font-weight: 500;
+    font-size: 21px;
+}
+.contenedor-general .texto-intro #btn-sobreMi{
+    text-decoration: none;
+    padding: 15px 25px 15px;
+    background-color: #EDDDE0;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    border: rgb(10, 10, 10) 2px solid;
+    border-radius: 100px;
+}
+.contenedor-general .texto-intro #btn-sobreMi:hover{
+    background-color: black;
+    color: #EDDDE0;
+    border: #EDDDE0 2px solid;
+    transition: all 0.7s ease;
+}
+#carta-final{
+    background-color: #EDDDE0;
+    font-size: 15px;
     border:solid #000000;
     border-width: 2px;
 }
-#segunda-seccion{
-    background-color: aqua;
-}
-.parrafo-inicio{
-    text-align: justify;
-    text-justify: inter-word;
 
-    font-size: 1vw;
-    margin-right: 35px;
-    padding: 5px;
+.footer-link{
+    margin: 1% 0 1% 2%;
+    list-style-type:none;
 }
+@media screen and (max-width: 900px) {
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+	.contenedor-general{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contenedor-general .imagen-perfil{
+        display: flex;
+        justify-content: center;
+        min-height: 55vh;
+    }
+    .contenedor-general .imagen-perfil img{
+        width: 50%;
+        height: 50%;
+        margin: 5% 0%;
+        border: rgb(10, 10, 10) 2px solid;
+        border-radius: 200px;
+    }
+    .contenedor-general .texto-intro{
+        padding: 5% 0% 1% 1%;
+    }
+    .contenedor-general .texto-intro header, main, footer{
+        margin: 2% 0;
+    }
+    .contenedor-general .texto-intro main p{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .contenedor-general .texto-intro #btn-sobreMi{
+        text-decoration: none;
+        padding: 9px 15px 5px;
+        background-color: #EDDDE0;
+        position: absolute;
+        color: black;
+        font-weight: bold;
+        border: rgb(10, 10, 10) 2px solid;
+        border-radius: 100px;
+    }
+    .carta-final .footer-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}*/
+

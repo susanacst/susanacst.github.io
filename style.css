@@ -103,6 +103,7 @@ nav .lista-menu a:hover::after{
     margin: 1% 0 1% 2%;
     list-style-type:none;
 }
+/*
 @media screen and (max-width: 900px) {
     nav{
         display: flex;
@@ -151,7 +152,7 @@ nav .lista-menu a:hover::after{
         align-items: center;
     }
 }
-/*
+
 @media screen and (max-width: 700px) {
 	
 }

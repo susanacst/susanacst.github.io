@@ -6,9 +6,15 @@
 body{
     min-height: 100vh;
     font-family:'Quicksand', sans-serif;
-   /* overflow: hidden;*/
 }
 nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    justify-content: center;
+    transition: all 0.5s ease-in;
     background-color: black;
 }
 nav .lista-menu{
@@ -49,115 +55,38 @@ nav .lista-menu a:hover::after{
     opacity:1;
     transform: translateY(15px)
 }
-.contenedor-general{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-}
-.contenedor-general .imagen-perfil{
+.banner{
     display: flex;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
     min-height: 85vh;
 }
-.contenedor-general .imagen-perfil img{
-    width: 65%;
-    height: 75%;
-    margin: 5% 0%;
-    border: rgb(10, 10, 10) 2px solid;
-    border-radius: 200px;
+.banner .contenedor{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
 }
-.contenedor-general .texto-intro{
-    padding: 15% 0% 5% 5%;
+.banner .contenedor .contenido-img{
+    display: flex;
+    justify-content: center;
 }
-.contenedor-general .texto-intro header, main, footer{
-    margin: 2% 0;
+.banner .contenedor .contenido-img img{
+    height: 400px;
+    justify-content: center;
 }
-.contenedor-general .texto-intro main p{
-    font-weight: 500;
-    font-size: 21px;
+.banner .contenedor .contenido-img p{
+    justify-content: center;
+    text-align: center;
+    
 }
-.contenedor-general .texto-intro #btn-sobreMi{
-    text-decoration: none;
-    padding: 15px 25px 15px;
-    background-color: #EDDDE0;
-    position: absolute;
-    color: black;
-    font-weight: bold;
-    border: rgb(10, 10, 10) 2px solid;
-    border-radius: 100px;
+.banner .contenedor .contenido-text{
+    margin: 15%;
+    align-items: center;
+    background-color: aqua;
 }
-.contenedor-general .texto-intro #btn-sobreMi:hover{
-    background-color: black;
-    color: #EDDDE0;
-    border: #EDDDE0 2px solid;
-    transition: all 0.7s ease;
+.banner .contenedor .contenido-text h1,p,input{
+    margin: 15px;
 }
-#carta-final{
-    background-color: #EDDDE0;
-    font-size: 15px;
-    border:solid #000000;
-    border-width: 2px;
+.banner .contenedor .contenido-text a{
+    
 }
-
-.footer-link{
-    margin: 1% 0 1% 2%;
-    list-style-type:none;
-}
-/*
-@media screen and (max-width: 900px) {
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-	.contenedor-general{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .contenedor-general .imagen-perfil{
-        display: flex;
-        justify-content: center;
-        min-height: 55vh;
-    }
-    .contenedor-general .imagen-perfil img{
-        width: 50%;
-        height: 50%;
-        margin: 5% 0%;
-        border: rgb(10, 10, 10) 2px solid;
-        border-radius: 200px;
-    }
-    .contenedor-general .texto-intro{
-        padding: 5% 0% 1% 1%;
-    }
-    .contenedor-general .texto-intro header, main, footer{
-        margin: 2% 0;
-    }
-    .contenedor-general .texto-intro main p{
-        font-weight: 500;
-        font-size: 12px;
-    }
-    .contenedor-general .texto-intro #btn-sobreMi{
-        text-decoration: none;
-        padding: 9px 15px 5px;
-        background-color: #EDDDE0;
-        position: absolute;
-        color: black;
-        font-weight: bold;
-        border: rgb(10, 10, 10) 2px solid;
-        border-radius: 100px;
-    }
-    .carta-final .footer-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 700px) {
-	
-}
-
-@media screen and (max-width: 600px) {
-
-}*/
-

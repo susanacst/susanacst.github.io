@@ -1,0 +1,66 @@
+.contenedor-banner-arriba{
+    background-color: rgb(19, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 85vh;*/
+    
+    min-height: 35vh;
+}
+.banner-presentacion{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: wheat;
+}
+.banner-presentacion .contenido-textoBanner{
+    width: 100%;
+    /* background-color: aqua; */
+    color: pink;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    
+}
+.contenido-textoBanner h1{
+    color: pink;
+    font-size: 55px;
+}
+.contenido-textoBanner p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor-tarjetota{
+    width: 100%;
+    background-color: rgb(52, 110, 110);
+}
+.contenedor-tarjetota .tarjetota{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.tarjetota .tarjetota-img{
+    
+}
+.tarjetota .tarjetota-txt{
+    
+}
+
+
+.contenedor-tarjetitas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 35vh;
+}
+.contenedor-tarjetitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-tarjetitas .tarjetita{
+    background-color: aqua;
+    padding: 2rem 8rem 2rem 8rem;
+    min-height: 35vh;
+}
